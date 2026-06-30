@@ -1,5 +1,13 @@
-<!-- BEGIN:nextjs-agent-rules -->
-# This is NOT the Next.js you know
+# Nativee Console Engineering Rules
 
-This version has breaking changes — APIs, conventions, and file structure may all differ from your training data. Read the relevant guide in `node_modules/next/dist/docs/` before writing any code. Heed deprecation notices.
-<!-- END:nextjs-agent-rules -->
+## Principles
+
+- Keep components focused.
+- Prefer composition over inheritance.
+- Business logic belongs in services.
+- Components never call Axios directly.
+- Hooks communicate with services.
+- Services communicate with the API.
+- Keep UI stateless whenever possible.
+- Maintain strict TypeScript typing.
+- One feature per commit.
